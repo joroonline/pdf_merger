@@ -20,7 +20,7 @@ def order(file: tuple, count: int = 0) -> list:
         for data in i.split('/'):
             i = data
         print(f"{count} -> {i}")
-    orders = list(input())
+    orders = list(input('Please write the order from the PDF: '))
     for i in range(len(orders)):
         file_1.append(file[int(orders[i])-1])
     return file_1
